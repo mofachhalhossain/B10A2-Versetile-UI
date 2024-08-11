@@ -14,7 +14,8 @@ h4,
 h5,
 h6,
 p,
-a{
+a,
+table{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -313,7 +314,83 @@ a{
 }
 
 .training-exercise-gallery {
-    display: grid;
-    grid-auto-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.exercise-gallery-item img {
+    max-width: 250px;
+}
+
+.gallery-item-1 img{
+    max-width: 250px;
+    height: 200px;
+}
+
+.gallery-item-2 img{
+    max-width: 520px;
+    height: 200px;
+}
+
+.gallery-item-3 img{
+    max-width: 290px;
+    height: 200px;
+}
+
+.training-exercise-section {
+    margin-bottom: 100px;
+}
+
+.bmi-section{
+    margin-bottom: 88px;
+}
+
+.bmi-calculation-section-wrap {
+    background-color: #222222;
+}
+
+.bmi-inner {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.bmi-inner h2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.bmi-inner p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-calculation-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 49px 0px 52px 0px;
+}
+
+.calculate-bmi {
+    max-width: 577px;
+}
+
+.bmi-calculator-chart h3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 52px;
+}
+
+.bmi-calculator-chart table td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 18px;
 }

@@ -89,32 +89,82 @@
             <h2>Trainings and Exercises</h2>
             <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
             <div class="training-exercise-gallery">
-                <div class="exercise-gallery-item">
+                <div class="exercise-gallery-item gallery-item-1">
                     <img src="images/exercise1.jpg" alt="Exercise 1">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="exercise-gallery-item">
-                    <img src="images/exercise1.jpg" alt="Exercise 1">
+                <div class="exercise-gallery-item gallery-item-2">
+                    <img src="images/exercise2.png" alt="Exercise 2">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="exercise-gallery-item">
-                    <img src="images/exercise1.jpg" alt="Exercise 1">
+                <div class="exercise-gallery-item gallery-item-3">
+                    <img src="images/exercise3.png" alt="Exercise 3">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="exercise-gallery-item">
-                    <img src="images/exercise1.jpg" alt="Exercise 1">
+                <div class="exercise-gallery-item gallery-item-4">
+                    <img src="images/exercise4.png" alt="Exercise 4">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="exercise-gallery-item">
-                    <img src="images/exercise1.jpg" alt="Exercise 1">
+                <div class="exercise-gallery-item gallery-item-5">
+                    <img src="images/exercise5.jpg" alt="Exercise 5">
                     <p>Lorem Ipsum</p>
                 </div>
-                <div class="exercise-gallery-item">
-                    <img src="images/exercise1.jpg" alt="Exercise 1">
+                <div class="exercise-gallery-item gallery-item-6">
+                    <img src="images/exercise6.jpg" alt="Exercise 6">
                     <p>Lorem Ipsum</p>
                 </div>
             </div>
         </div>
+        <div class="bmi-section container">
+            <div class="bmi-inner">
+                <h2>BMI Calculator</h2>
+                <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+        </div>
+        <div class="bmi-calculation-section-wrap">
+            <div class="bmi-calculation-section container">
+                <div class="bmi-calculator-chart">
+                    <h3>BMI Calculator Chart</h3>
+                    <table>
+                        <tr>
+                            <td>BMI</td>
+                            <td>Weight Status</td>
+                        </tr>
+                        <tr>
+                            <td>Below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5 - 24.9</td>
+                            <td>Healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0 - 29.9</td>
+                            <td>Overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0 - and Above</td>
+                            <td>Obese</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="calculate-bmi">
+                    <h3>
+                        Calculate your BMI
+                    </h3>
+                    <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                    <form action="POST" class="bmi-form">
+                        <input type="text" name="Height/cm" id="height" placeholder="Height/cm">
+                        <input type="text" name="Weight/kg" id="weight" placeholder="Weight/kg">
+                        <input type="text" name="Age" id="age" placeholder="Age">
+                        <input type="text" name="Sex" id="sex" placeholder="Sex">
+                        <input type="text" name="Activity-factor" id="activity-factor" placeholder="Select an activity factor">
+                        <button type="submit">Calculate</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

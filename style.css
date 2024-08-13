@@ -308,11 +308,61 @@ ul li{
     margin-bottom: 45px;
 }
 
+.workout-plan {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 88px;
+}
+
+.workout-plan h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; 
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 120%;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.workout-plan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.workout-plan th, .workout-plan td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+.workout-plan th {
+    background-color: #e22d00;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.workout-plan td {
+    color: #ffffff;
+}
+
 .training-exercise-section h2 {
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
     line-height: 120%;
+}
+
+.exercise-gallery-item {
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .training-exercise-section p {
@@ -322,33 +372,160 @@ ul li{
     line-height: 24px;
     letter-spacing: 0.3px;
     color: rgba(255, 255, 255, 0.5);
-    max-width: 670px;
+    max-width: 175px;
+    position: absolute;
+}
+
+.exercise-gallery-item.gallery-item-4 p {
+    top: 10%;
+    right: 5%;
+}
+
+.exercise-gallery-item.gallery-item-5 p,
+.exercise-gallery-item.gallery-item-6 p {
+    bottom: 10%;
+    left: 10%;
+}
+
+.exercise-gallery-item.gallery-item-3 p {
+    bottom: 10%;
+    left: 10%;
+    color: #ffffff;
 }
 
 .training-exercise-gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 58px;
+}
+
+.exercise-gallery-item.gallery-item-1 p {
+    bottom: 10%;
+    left: 10%;
 }
 
 .exercise-gallery-item img {
-    max-width: 250px;
+    width: 100%;
+    height: 200px;
 }
 
 .gallery-item-1 img{
-    max-width: 250px;
+    max-width: 100%;
     height: 200px;
 }
 
+.exercise-gallery-item.gallery-item-1 p {
+    color: #000000;
+}
+
+.overlay-aqua {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #06FFD2;
+    opacity: 30%;
+}
+
+.overlay-red {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF0000;
+    opacity: 30%;
+}
+
+.overlay-gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 30%;
+}
+
+.overlay-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 50%;
+}
+
+.overlay-green {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #42FF00;
+    opacity: 30%;
+}
+
+.overlay-blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #0047FF;
+    opacity: 30%;
+}
+
+
+
 .gallery-item-2 img{
-    max-width: 520px;
+    max-width: 100%;
     height: 200px;
+}
+
+.exercise-gallery-item.gallery-item-2 p {
+    top: 10%;
+    left: 10%;
 }
 
 .gallery-item-3 img{
-    max-width: 290px;
+    max-width: 100%;
     height: 200px;
+    object-fit: cover;
 }
+
+.exercise-gallery-item.gallery-item-1 {
+    width: 25%;
+}
+.exercise-gallery-item.gallery-item-2 {
+    width: 45%;
+}
+
+.exercise-gallery-item.gallery-item-3 {
+    width: 30%;
+}
+
+.exercise-gallery-item.gallery-item-4 {
+    width: 45%;
+}
+
+.exercise-gallery-item.gallery-item-5 {
+    width: 25%;
+}
+
+.exercise-gallery-item.gallery-item-6 {
+    width: 30%;
+}
+
 
 .training-exercise-section {
     margin-bottom: 100px;
@@ -448,57 +625,6 @@ ul li{
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 35px;
 }
-/* 
-input#height,
-input#weight,
-input#age,
-input#sex {
-    width: 212px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 12px 40px 12px 20px;
-    border: none;
-    margin-bottom: 12px;
-    margin-right: 12px;
-}
-
-input#sex::after {
-    content: "\f107";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    display: inline-block;
-}
-
-input#activity-factor {
-    width: 87%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 12px 40px 12px 20px;
-    border: none;
-    margin-bottom: 12px;
-    margin-right: 12px;
-}
-
-input::placeholder {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.bmi-form button {
-    background: #E6533C;
-    border-radius: 42px;
-    padding: 16px 70px;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-    border: none;
-    margin-top: 34px;
-    cursor: pointer;
-} */
 
 .bmi-form {
     display: flex;
@@ -699,4 +825,165 @@ input::placeholder {
     text-align: center;
     padding: 35px 0px;
     border-top: 2px solid #ffffff2c;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.nav-mobile i {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 576px) {
+    .nav-mobile {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .hero-section,
+    .habit-gallery,
+    .run-extra-mile-section,
+    .footer-top,
+    .bmi-calculation-section {
+        flex-direction: column;
+    }
+    input#height, input#weight, input#age, input#sex {
+        width: 75px;
+    }
+    input#activity-factor {
+        width: 90%;
+    }
+    .activity-factor-icon {
+        right: -11% !important;
+    }
+    .site-body {
+    padding: 0 6%;
+}
+    .site-header {
+        padding: 0 6%;
+        margin: 52px 0;
+    }
+    .hero-content h2,
+    .hero-content h2 span {
+        font-size: 36px;
+        width: 50%;
+    }
+    .hero-img-right-content {
+        top: 10%;
+    }
+    .hero-img-left-content {
+        bottom: 40%;
+        left: -5%;
+    }
+    .hero-content p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 50%;
+    }
+    .join-club, .join-now {
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 40px;
+    }
+    .hero-section {
+        margin-bottom: 0px;
+    }
+    .habit-gallery {
+        gap: 40px   ;
+    }
+    .habit-inner p {
+        width: 55%;
+    }
+    .extra-mile-content h2 {
+        font-size: 32px;
+    }
+    .extra-mile-content p {
+        font-size: 14px;
+    }
+    .join-now {
+        position: relative;
+        display: block;
+        width: 75%;
+        text-align: center;
+    }
+    .run-extra-mile-section {
+        gap: 31px;
+    }
+    .extra-mile-img {
+        margin: 0 auto;
+    }
+    .training-exercise-gallery {
+        margin-top: 160px;
+    }
+    .training-exercise-section p {
+        max-width: 330px;
+        margin-top: 15px;
+    }
+    .exercise-gallery-item.gallery-item-3,
+    .exercise-gallery-item.gallery-item-6 {
+        display: none;
+    }
+    .exercise-gallery-item {
+        margin-bottom: 0px;
+    }
+    .exercise-gallery-item.gallery-item-1 {
+        width: 45%;
+    }
+    .exercise-gallery-item.gallery-item-2 {
+        width: 55%;
+    }
+    .exercise-gallery-item.gallery-item-4 {
+        width: 40%;
+    }
+    .exercise-gallery-item.gallery-item-5 {
+        width: 60%;
+    }
+    .bmi-calculation-section-wrap {
+        padding: 0px 40px;
+    }
+    .bmi-calculation-section {
+        gap: 42px ;
+    }
+    .bmi-form button {
+        position: relative;
+    }
+    .training-exercise-section h2 {
+        font-size: 32px;
+    }
+    .training-exercise-section p {
+        font-size: 14px;
+    }
+    .bmi-inner h2 {
+        font-size: 32px;
+    }
+    .bmi-inner p {
+        font-size: 14px;
+    }
+    .bmi-section {
+        margin-bottom: 30px;
+    }
+    .our-team-section h2 {
+        font-size: 32px;
+    }
+    .team-gallery {
+        justify-content: center;
+    }
+    .team-member-1,
+    .team-member-4 {
+        display: none;
+    }
+    .footer-top {
+        gap: 30px;
+    }
+    .footer-bottom p {
+        text-align: left;
+    }
+    .extra-mile-img img {
+        width: 100%;
+    }
+    .workout-plan th, .workout-plan td {
+        padding: 12px 2px;
+    }
 }

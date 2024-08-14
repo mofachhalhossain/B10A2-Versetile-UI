@@ -372,8 +372,9 @@ ul li{
     line-height: 24px;
     letter-spacing: 0.3px;
     color: rgba(255, 255, 255, 0.5);
-    max-width: 175px;
+    max-width: 625px;
     position: absolute;
+
 }
 
 .exercise-gallery-item.gallery-item-4 p {
@@ -397,7 +398,7 @@ ul li{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 58px;
+    margin-top: 110px;
 }
 
 .exercise-gallery-item.gallery-item-1 p {
@@ -868,10 +869,11 @@ input::placeholder {
     .hero-content h2,
     .hero-content h2 span {
         font-size: 36px;
-        width: 50%;
+        max-width: 274px;
     }
     .hero-img-right-content {
         top: 10%;
+        right: -10%;
     }
     .hero-img-left-content {
         bottom: 40%;
@@ -880,12 +882,15 @@ input::placeholder {
     .hero-content p {
         font-size: 16px;
         line-height: 24px;
-        width: 50%;
+        max-width: 274px;
     }
     .join-club, .join-now {
         font-size: 18px;
         line-height: 22px;
-        padding: 16px 40px;
+        padding: 14px 25px;
+    }
+    .download-app {
+        padding: 14px 25px;
     }
     .hero-section {
         margin-bottom: 0px;
